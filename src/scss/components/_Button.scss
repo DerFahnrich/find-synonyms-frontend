@@ -1,0 +1,23 @@
+@use "../abstracts/" as *;
+
+.button {
+  background-color: $green;
+  border: none;
+  border-radius: 0.5rem;
+  color: $white;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 500;
+  height: 4rem;
+  margin-top: 2rem;
+  transition: all 0.2s;
+  width: 100%;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: #27ad60;
+  }
+}

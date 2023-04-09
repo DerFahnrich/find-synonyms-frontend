@@ -1,0 +1,12 @@
+@use "../abstracts/" as *;
+
+.navbar {
+  @include elevation;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $white;
+  height: 5rem;
+}
