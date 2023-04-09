@@ -1,0 +1,51 @@
+@use "../abstracts/" as *;
+
+.synonyms-output {
+  align-items: center;
+  display: flex;
+
+  background-color: $white;
+  border-radius: 0.5rem;
+  color: $text_main_color;
+  height: 4rem;
+  margin-top: 2rem;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  width: 100%;
+
+  &.expand {
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .status-text {
+    color: gray;
+    font-size: 1.3rem;
+  }
+
+  .word {
+    font-weight: 600;
+  }
+
+  .synonyms-header {
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+
+  .transitive-synonyms,
+  .synonyms {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 1.4rem;
+    padding-left: 1rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+}

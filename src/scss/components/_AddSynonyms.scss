@@ -1,0 +1,33 @@
+@use "../abstracts/" as *;
+
+.add-synonyms {
+  .form {
+    .synonyms-input-container,
+    .word-input-container {
+      @include flex;
+      background-color: $white;
+      border-radius: 0.5rem;
+      height: 4rem;
+      margin-top: 2rem;
+      padding-inline: 2rem;
+      width: 100%;
+    }
+
+    .input {
+      background-color: transparent;
+      border: none;
+      width: 100%;
+
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+
+  .feedback {
+    color: $white;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+}

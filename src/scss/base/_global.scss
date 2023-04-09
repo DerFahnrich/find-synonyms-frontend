@@ -1,0 +1,29 @@
+@use "../abstracts/" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  color: $text_main_color;
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 0.625rem;
+}
+
+body {
+  background-color: $primary_color;
+  min-height: 100vh;
+}
+
+main {
+  @include container;
+  padding-block: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
