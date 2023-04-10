@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+
+.synonyms-container {
+  display: block;
+}
+
+@include media_breakpoint_down_md {
+  .synonyms-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
