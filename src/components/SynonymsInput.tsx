@@ -11,11 +11,8 @@ export const SynonymsInput = (): JSX.Element => {
   const handleOnSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
     dispatch(updateStatus(Status.LOADING));
-
-    setTimeout(() => {
-      dispatch(fetchSynonyms(input));
-      setInput("");
-    }, 1000);
+    dispatch(fetchSynonyms(input));
+    setInput("");
   };
 
   return (
